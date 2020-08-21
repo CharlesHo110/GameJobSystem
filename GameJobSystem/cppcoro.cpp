@@ -65,7 +65,7 @@ namespace mycppcoro {
 
         std::this_thread::sleep_for(2s);
 
-        for (int i = 0; i < 100; ++i) {
+        for (int i = 0; i < 500; ++i) {
 
             auto start = std::chrono::steady_clock::now();
             cppcoro::sync_wait(runAll(tp));                         // (2)
